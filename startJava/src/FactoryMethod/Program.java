@@ -6,12 +6,14 @@ public class Program {
             return new JavaDeveloperFactory();
         } else if (spec.equalsIgnoreCase("c++")){
             return new CppDeveloperFactory();
-        } else {
+        } else if(spec.equalsIgnoreCase("php")){
+            return new PhpDeveloperFactory();
+        }else {
             throw new RuntimeException(spec + " is unknown spec!");
         }
     }
     public static void main(String[] args) {
-        DeveloperFactory developerFactory = CreateDevFactoryBySpec("java");
+        DeveloperFactory developerFactory = CreateDevFactoryBySpec("php");
         Developer developer = developerFactory.createDeveloper();
         developer.writesCode();
     }
