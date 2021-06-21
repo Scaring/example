@@ -1,12 +1,12 @@
 public class Car {
     class Engine {
-        private boolean isRunning = false;
+        // private boolean isRunning = false;
         
         public void start() {
-            isRunning = true;
+            // isRunning = true;
         }
         public void stop() {
-            isRunning = false;
+            // isRunning = false;
         }
     }    
     
