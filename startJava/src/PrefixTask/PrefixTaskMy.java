@@ -34,8 +34,7 @@ class PrefixTaskMy {
             if (firstWord.charAt(j) != secondWord.charAt(j))
                 break;
 
-            if (firstWord.charAt(j) == secondWord.charAt(j))
-                twoWordsPrefix += firstWord.charAt(j);
+            twoWordsPrefix += firstWord.charAt(j);
 
         }
 
