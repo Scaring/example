@@ -11,7 +11,7 @@ public class StackTrace {
     }
 
     public static String getBook(){
-        System.out.println(book.toString());
+        System.out.println(book.toString()); //here is stack trace exception!!!
         return book;
     }
 }
